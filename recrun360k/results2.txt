@@ -1,0 +1,189 @@
+k = 100  # number of neighbors
+p = 2  # default distance metric, Euclidean
+n = 10  # number of artist to recommend per neighbor
+t = 10  # number of artists to recommend overall ("top")
+
+>>> # PRECISION
+... 1.0 * succ0506 / recs0506
+0.20558487247141602
+>>> 1.0 * succ0607 / recs0607
+0.159127538411948
+>>> 1.0 * succ0708 / recs0708
+0.13993174061433447
+>>> 1.0 * succ0809 / recs0809
+0.1437087043952887
+
+>>> # RECALL
+... 1.0 * succ0506 / plays0506
+0.007365162388045593
+>>> 1.0 * succ0607 / plays0607
+0.008798455369077677
+>>> 1.0 * succ0708 / plays0708
+0.007223259180252933
+>>> 1.0 * succ0809 / plays0809
+0.009527845497485907
+
+
+k = 100  # number of neighbors
+p = 2  # default distance metric, Euclidean
+n = 5  # number of artist to recommend per neighbor
+t = 10  # number of artists to recommend overall ("top")
+
+>>> # PRECISION
+... 1.0 * succ0506 / recs0506
+0.21634189548272809
+>>> 1.0 * succ0607 / recs0607
+0.16280925778132482
+>>> 1.0 * succ0708 / recs0708
+0.1421420476010578
+>>> 1.0 * succ0809 / recs0809
+0.1492193308550186
+>>> 
+
+>>> # RECALL
+... 1.0 * succ0506 / plays0506
+0.007696003907080797
+>>> 1.0 * succ0607 / plays0607
+0.00848358829645032
+>>> 1.0 * succ0708 / plays0708
+0.007166120676519884
+>>> 1.0 * succ0809 / plays0809
+0.00955641474935243
+
+
+
+k = 100  # number of neighbors
+p = 2  # default distance metric, Euclidean
+n = 1  # number of artist to recommend per neighbor
+t = 10  # number of artists to recommend overall ("top")
+
+>>> # PRECISION
+... 1.0 * succ0506 / recs0506
+0.25663341116535765
+>>> 1.0 * succ0607 / recs0607
+0.1997425445183437
+>>> 1.0 * succ0708 / recs0708
+0.1595840057378519
+>>> 1.0 * succ0809 / recs0809
+0.17576536073645901
+
+>>> # RECALL
+... 1.0 * succ0506 / plays0506
+0.009523509440799062
+>>> 1.0 * succ0607 / plays0607
+0.011061933759096984
+>>> 1.0 * succ0708 / plays0708
+0.008475544720402255
+>>> 1.0 * succ0809 / plays0809
+0.011727677891208288
+
+
+
+k = 10  # number of neighbors
+p = 2  # default distance metric, Euclidean
+n = 1  # number of artist to recommend per neighbor
+t = 10  # number of artists to recommend overall ("top")
+
+>>> # PRECISION
+... 1.0 * succ0506 / recs0506
+0.31569742020113684
+>>> 1.0 * succ0607 / recs0607
+0.2526714158504007
+>>> 1.0 * succ0708 / recs0708
+0.21747801649895748
+>>> 1.0 * succ0809 / recs0809
+0.22012119442213623
+
+
+>>> # RECALL
+... 1.0 * succ0506 / plays0506
+0.01137464651159127
+>>> 1.0 * succ0607 / plays0607
+0.013485816129511361
+>>> 1.0 * succ0708 / plays0708
+0.011422939204632028
+>>> 1.0 * succ0809 / plays0809
+0.014356049062928538
+
+
+
+k = 2  # number of neighbors
+p = 2  # default distance metric, Euclidean
+n = 1  # number of artist to recommend per neighbor
+t = 10  # number of artists to recommend overall ("top")
+
+>>> # PRECISION
+... 1.0 * succ0506 / recs0506
+0.3302277432712215
+>>> 1.0 * succ0607 / recs0607
+0.33403693931398415
+>>> 1.0 * succ0708 / recs0708
+0.29797125950972103
+>>> 1.0 * succ0809 / recs0809
+0.29345670852610706
+
+>>> # RECALL
+... 1.0 * succ0506 / plays0506
+0.002512820108862614
+>>> 1.0 * succ0607 / plays0607
+0.0037605822070399526
+>>> 1.0 * succ0708 / plays0708
+0.0033568870943166233
+>>> 1.0 * succ0809 / plays0809
+0.004228249276245619
+
+
+
+# NEW RUN WITH METHODS
+
+k = 2  # number of neighbors
+p = 2  # default distance metric, Euclidean
+n = 1  # number of artist to recommend per neighbor
+t = 10  # number of artists to recommend overall ("top")
+
+>>> recAccuracy(recs05w, users1k06w)
+(0.44456521739130433, 0.0032217662210809067)
+>>> recAccuracy(recs06w, users1k07w)
+(0.41005702436495595, 0.004699242536759246)
+>>> recAccuracy(recs07w, users1k08w)
+(0.3473552686380675, 0.003971126009446899)
+>>> recAccuracy(recs08w, users1k09w)
+(0.28418230563002683, 0.0057242044358727096)
+
+>>> recAccuracy(recs05nw, users1k06nw)
+(0.44456521739130433, 0.0032217662210809067)
+>>> recAccuracy(recs06nw, users1k07nw)
+(0.410958904109589, 0.004990346056735482)
+>>> recAccuracy(recs07nw, users1k08nw)
+(0.3996039603960396, 0.0048043958555538625)
+>>> recAccuracy(recs08nw, users1k09nw)
+(0.3288005578800558, 0.007274831243972999)
+
+
+
+k = 10  # number of neighbors
+p = 2  # default distance metric, Euclidean
+n = 1  # number of artist to recommend per neighbor
+t = 10  # number of artists to recommend overall ("top")
+# Now predict on user profiles for 1k users in 2005
+
+>>> recAccuracy(recs05w, users1k06w)
+(0.4134215037962283, 0.013296678193605306)
+>>> recAccuracy(recs06w, users1k07w)
+(0.3252082312591867, 0.01577305807218179)
+>>> recAccuracy(recs07w, users1k08w)
+(0.27634613456332097, 0.013122809690690233)
+>>> recAccuracy(recs08w, users1k09w)
+(0.23565438613021766, 0.019294117647058823)
+
+
+>>> recAccuracy(recs05nw, users1k06nw)
+(0.4134215037962283, 0.013296678193605306)
+>>> recAccuracy(recs06nw, users1k07nw)
+(0.38975817923186346, 0.021161443635823556)
+>>> recAccuracy(recs07nw, users1k08nw)
+(0.3723320846763655, 0.02035083041292092)
+>>> recAccuracy(recs08nw, users1k09nw)
+(0.3043545757975627, 0.030248794599807137)
+
+

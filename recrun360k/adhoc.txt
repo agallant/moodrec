@@ -1,0 +1,16 @@
+>>> adHocRecs(moods1, k, p)
+['6da6a053-618f-4f17-aea1-c8075bd8cc2d']
+
+The Dave Clark Five
+
+
+>>> adHocRecs(moods2, k, p)
+['db76c5ca-d555-4f09-b1db-baa1b713d875']
+
+Mary J. Blige
+
+
+>>> adHocRecs(moods3, k, p)
+['8bfac288-ccc5-448d-9573-c33ea2aa5c30']
+
+Red Hot Chili Peppers

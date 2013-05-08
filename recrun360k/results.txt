@@ -1,0 +1,301 @@
+k = 100  # number of neighbors
+p = 2  # default distance metric, Euclidean
+n = 10  # number of artist to recommend per neighbor
+t = 10  # number of artists to recommend overall ("top")
+
+# ACCURACY
+>>> 1.0 * succ0506 / recs0506
+0.1327489041953663
+>>> 1.0 * succ0607 / recs0607
+0.10298016756814084
+>>> 1.0 * succ0708 / recs0708
+0.10718778077268644
+>>> 1.0 * succ0809 / recs0809
+0.11615801483171706
+
+>>> # PRECISION
+... 1.0 * succ0506 / plays0506
+0.005009885859675933
+>>> 1.0 * succ0607 / plays0607
+0.005768602406059706
+>>> 1.0 * succ0708 / plays0708
+0.0056805195794606125
+>>> 1.0 * succ0809 / plays0809
+0.00775655188176139
+
+
+
+k = 100  # number of neighbors
+p = 2  # default distance metric, Euclidean
+n = 100  # number of artist to recommend per neighbor
+t = 10  # number of artists to recommend overall ("top")
+
+>>> # ACCURACY
+... 1.0 * succ0506 / recs0506
+0.1171791012685444
+>>> 1.0 * succ0607 / recs0607
+0.0940886171011694
+>>> 1.0 * succ0708 / recs0708
+0.08741638040137407
+>>> 1.0 * succ0809 / recs0809
+0.09678343720896912
+
+>>> # PRECISION
+... 1.0 * succ0506 / plays0506
+0.004293062568432993
+>>> 1.0 * succ0607 / plays0607
+0.0052101589187583544
+>>> 1.0 * succ0708 / plays0708
+0.004604411092488192
+>>> 1.0 * succ0809 / plays0809
+0.006432843211945757
+
+
+
+k = 100  # number of neighbors
+p = 2  # default distance metric, Euclidean
+n = 1  # number of artist to recommend per neighbor
+t = 10  # number of artists to recommend overall ("top")
+
+>>> # ACCURACY
+... 1.0 * succ0506 / recs0506
+0.18823760818253343
+>>> 1.0 * succ0607 / recs0607
+0.14786815845176898
+>>> 1.0 * succ0708 / recs0708
+0.15352459016393444
+>>> 1.0 * succ0809 / recs0809
+0.1478318002628121
+
+
+>>> # PRECISION
+... 1.0 * succ0506 / plays0506
+0.007538460326587842
+>>> 1.0 * succ0607 / plays0607
+0.008715282934798752
+>>> 1.0 * succ0708 / plays0708
+0.008918368124333383
+>>> 1.0 * succ0809 / plays0809
+0.01071346944994667
+
+
+
+k = 100  # number of neighbors
+p = 2  # default distance metric, Euclidean
+n = 2  # number of artist to recommend per neighbor
+t = 10  # number of artists to recommend overall ("top")
+
+>>> # ACCURACY
+... 1.0 * succ0506 / recs0506
+0.1706959706959707
+>>> 1.0 * succ0607 / recs0607
+0.12968334541938603
+>>> 1.0 * succ0708 / recs0708
+0.10472972972972973
+>>> 1.0 * succ0809 / recs0809
+0.1190305349597385
+
+>>> # PRECISION
+... 1.0 * succ0506 / plays0506
+0.005506148138228737
+>>> 1.0 * succ0607 / plays0607
+0.0063745729986633
+>>> 1.0 * succ0708 / plays0708
+0.005018665244552796
+>>> 1.0 * succ0809 / plays0809
+0.007108982172786835
+
+
+k = 10  # number of neighbors
+p = 2  # default distance metric, Euclidean
+n = 1  # number of artist to recommend per neighbor
+t = 10  # number of artists to recommend overall ("top")
+
+>>> # ACCURACY
+... 1.0 * succ0506 / recs0506
+0.23393776583837028
+>>> 1.0 * succ0607 / recs0607
+0.18199020480854852
+>>> 1.0 * succ0708 / recs0708
+0.1625934707277038
+>>> 1.0 * succ0809 / recs0809
+0.170665492699391
+
+>>> # PRECISION
+... 1.0 * succ0506 / plays0506
+0.00823165208075684
+>>> 1.0 * succ0607 / plays0607
+0.009713352146145849
+>>> 1.0 * succ0708 / plays0708
+0.008489829346335517
+>>> 1.0 * succ0809 / plays0809
+0.01107534664025598
+
+
+
+k = 50  # number of neighbors
+p = 2  # default distance metric, Euclidean
+n = 1  # number of artist to recommend per neighbor
+t = 10  # number of artists to recommend overall ("top")
+
+>>> # ACCURACY
+... 1.0 * succ0506 / recs0506
+0.19382740318458816
+>>> 1.0 * succ0607 / recs0607
+0.16037641405546102
+>>> 1.0 * succ0708 / recs0708
+0.1583657910002486
+>>> 1.0 * succ0809 / recs0809
+0.15056536401507636
+
+>>> # PRECISION
+... 1.0 * succ0506 / plays0506
+0.007766898518302625
+>>> 1.0 * succ0607 / plays0607
+0.009517302836774098
+>>> 1.0 * succ0708 / plays0708
+0.009099306719488038
+>>> 1.0 * succ0809 / plays0809
+0.01084203108334603
+
+
+
+k = 2  # number of neighbors
+p = 2  # default distance metric, Euclidean
+n = 1  # number of artist to recommend per neighbor
+t = 10  # number of artists to recommend overall ("top")
+
+>>> # PRECISION
+... 1.0 * succ0506 / recs0506
+0.2620041753653445
+>>> 1.0 * succ0607 / recs0607
+0.23505775991963837
+>>> 1.0 * succ0708 / recs0708
+0.24438312968072526
+>>> 1.0 * succ0809 / recs0809
+0.23305986022485567
+
+>>> # RECALL
+... 1.0 * succ0506 / plays0506
+0.001977171935186571
+>>> 1.0 * succ0607 / plays0607
+0.002780335660181197
+>>> 1.0 * succ0708 / plays0708
+0.002952156026207527
+>>> 1.0 * succ0809 / plays0809
+0.0036521026969373763
+
+
+
+k = 5  # number of neighbors
+p = 2  # default distance metric, Euclidean
+n = 1  # number of artist to recommend per neighbor
+t = 10  # number of artists to recommend overall ("top")
+
+>>> # PRECISION
+... 1.0 * succ0506 / recs0506
+0.24209194432728806
+>>> 1.0 * succ0607 / recs0607
+0.18710089399744573
+>>> 1.0 * succ0708 / recs0708
+0.19495213228894692
+>>> 1.0 * succ0809 / recs0809
+0.1948388858547242
+
+
+>>> # RECALL
+... 1.0 * succ0506 / plays0506
+0.004521500760147776
+>>> 1.0 * succ0607 / plays0607
+0.005222040695083915
+>>> 1.0 * succ0708 / plays0708
+0.005332927015084565
+>>> 1.0 * succ0809 / plays0809
+0.006794720402255067
+
+
+
+
+WITHOUT RECWEIGHTS
+k = 10  # number of neighbors
+p = 2  # default distance metric, Euclidean
+n = 1  # number of artist to recommend per neighbor
+t = 10  # number of artists to recommend overall ("top")
+
+PRECISION
+>>> 1.0 * succ0506 / recs0506
+0.23393776583837028
+>>> 1.0 * succ0607 / recs0607
+0.20130799100756183
+>>> 1.0 * succ0708 / recs0708
+0.23812943899130157
+>>> 1.0 * succ0809 / recs0809
+0.23782807764235506
+
+RECALL
+>>> 1.0 * succ0506 / plays0506
+0.00823165208075684
+>>> 1.0 * succ0607 / plays0607
+0.011703549680677262
+>>> 1.0 * succ0708 / plays0708
+0.014208441261618162
+>>> 1.0 * succ0809 / plays0809
+0.017560566813957033
+
+
+
+WITHOUT RECWEIGHTS
+k = 50  # number of neighbors
+p = 2  # default distance metric, Euclidean
+n = 1  # number of artist to recommend per neighbor
+t = 10  # number of artists to recommend overall ("top")
+
+>>> # PRECISION
+... 1.0 * succ0506 / recs0506
+0.19382740318458816
+>>> 1.0 * succ0607 / recs0607
+0.18102902613256172
+>>> 1.0 * succ0708 / recs0708
+0.20376220562894887
+>>> 1.0 * succ0809 / recs0809
+0.20295767465578787
+
+
+>>> # RECALL
+... 1.0 * succ0506 / plays0506
+0.007766898518302625
+>>> 1.0 * succ0607 / plays0607
+0.011893658101886232
+>>> 1.0 * succ0708 / plays0708
+0.013513256132866067
+>>> 1.0 * succ0809 / plays0809
+0.0170558433643151
+
+
+WITHOUT RECWEIGHTS
+k = 100  # number of neighbors
+p = 2  # default distance metric, Euclidean
+n = 1  # number of artist to recommend per neighbor
+t = 10  # number of artists to recommend overall ("top")
+
+>>> # PRECISION
+... 1.0 * succ0506 / recs0506
+0.18823760818253343
+>>> 1.0 * succ0607 / recs0607
+0.17116387839539485
+>>> 1.0 * succ0708 / recs0708
+0.19392689517849523
+>>> 1.0 * succ0809 / recs0809
+0.19476158495634655
+
+
+>>> # RECALL
+... 1.0 * succ0506 / plays0506
+0.007538460326587842
+>>> 1.0 * succ0607 / plays0607
+0.011305510173770978
+>>> 1.0 * succ0708 / plays0708
+0.012984724973335365
+>>> 1.0 * succ0809 / plays0809
+0.016570166082584183
+
